@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth/components/login/login.component';
+import { LoggedUserGuard } from './core/guards/auth/logged-user.guard';
+import { AuthGuard } from './core/guards/auth/auth.guard';
 
 
 const appRoutes: Routes = [
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {path: '**', redirectTo: 'login'},
-  {path: '', pathMatch: 'full', redirectTo: 'login'}
+  {path: 'auth', canActivate: [ LoggedUserGuard ], loadChildren: './auth/auth.module#AuthModule' },
+  {path: 'dashboard', canActivate: [ AuthGuard ], loadChildren: './dashboard/dashboard.module#DashboardModule'},
+  {path: '**', redirectTo: 'dashboard'},
+  {path: '', pathMatch: 'full', redirectTo: 'dashboard'}
 
 ];
 

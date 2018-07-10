@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {LinkedinService} from '../../core/services/linkedin.service';
+import {FacebookService} from '../../core/services/facebook.service';
 
 @Component({
   selector: 'fyd-test',
@@ -8,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
 
-  constructor () {
+  constructor (
+    private linkedinService: LinkedinService,
+    private facebookService: FacebookService) {
   }
 
 
@@ -18,6 +22,11 @@ export class TestComponent implements OnInit {
         console.log(data);
       });*/
     /*this.linkedinService.getUsers()
+      .subscribe(data => {
+        console.log(data);
+      });*/
+
+/*    this.facebookService.getUsers()
       .subscribe(data => {
         console.log(data);
       });*/
