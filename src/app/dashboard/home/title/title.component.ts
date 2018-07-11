@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import * as $ from 'jquery';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'fyd-title',
@@ -11,7 +12,7 @@ export class TitleComponent implements OnInit, AfterViewInit {
   counter = 0;
   text = ['JAVA', 'JAVASCRIPT', 'C#', 'PHP', 'PYTHON', 'C++', 'RUBY', 'SWIFT', 'OBJECTIVE-C', 'SCALA', 'TYPESCRIPT', 'KOTLIN'];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngAfterViewInit() {
     setInterval(() => {
@@ -325,8 +326,10 @@ export class TitleComponent implements OnInit, AfterViewInit {
       const pna = new ParticleNetworkAnimation();	pna.init($('.particle-network-animation')[0]);
 
     }());
+  }
 
-
+  searchClick() {
+    this.router.navigate(['/auth']);
   }
 
 }

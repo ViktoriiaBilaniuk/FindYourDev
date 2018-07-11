@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'fyd-how-it-works',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HowItWorksComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
+
+
   }
 
 }

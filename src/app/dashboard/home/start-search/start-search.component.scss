@@ -1,0 +1,46 @@
+@import '../../../../scss/_variables.scss';
+
+.wrap {
+  height: 100vh;
+  background-image: url('../../../../assets/images/Abstract-business-background-newsroom-geometric-futuristic-field-white-with-black-lines-1-HD-img.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.wrap-white {
+  background-color: #ffffffba;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  position: relative;
+  margin-left: 60px;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-image: url("../../../../assets/images/search-dark-purple.svg");
+  transition: background-image 0.3s ease-in;
+  &:hover {
+    background-image: url("../../../../assets/images/search-purple.svg");
+    transition: background-image 0.3s ease-out;
+  }
+}
+
+.text-box {
+  display: flex;
+}
+
+.text {
+  color: $purple;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  background-image: $purple-gradient-linear-horizontal;
+  -webkit-background-clip: text;
+  font-size: 80px;
+  line-height: 100px;
+}
