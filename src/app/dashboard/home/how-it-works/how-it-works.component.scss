@@ -1,0 +1,76 @@
+@import '../../../../scss/_variables.scss';
+
+.wrap {
+  height: 100vh;
+  background-image: url('../../../../assets/images/plexus-and-triangles-fantasy-abstract-technology-and-engineering-background-with-original-organic-motion_rbfsdhre__F0000.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  .title {
+    padding-top: 80px;
+    width: 100%;
+    text-align: center;
+    &__text {
+      font-size: 50px;
+      color: $blue-dark;
+    }
+  }
+}
+
+.wrap-white {
+  background-color: #ffffffba;
+  height: 100vh;
+}
+
+.step-wrap {
+
+
+}
+
+.step {
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  &__digit {
+    color: $purple;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    background-image: $dark-purple-gradient-linear-vertical;
+    -webkit-background-clip: text;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    width: 48px;
+  }
+
+  &__text {
+    color: $blue-dark;
+  }
+}
+
+.step-left {
+  flex-direction: row-reverse;
+  width: 51.1%;
+}
+
+.step-right {
+    margin-left: 48.7%;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 80px;
+  background-color: $purple;
+  border: none;
+  top: 30px;
+
+}
+
+.horizontal-line {
+  width: 100px;
+  border-style: dashed;
+  border-color: $purple;
+  margin: 0 20px;
+  border-width: 0.6px;
+}
