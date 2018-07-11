@@ -1,0 +1,38 @@
+@import '../../../../scss/_variables.scss';
+
+.wrap {
+  height: 100vh;
+  background-image: url('../../../../assets/images/plexus-and-triangles-fantasy-abstract-technology-and-engineering-background-with-original-organic-motion_rbfsdhre__F0000.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.wrap-white {
+  background-color: #ffffffba;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  text-align: center;
+}
+
+.text {
+  color: $purple;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  background-image: $purple-gradient-linear-horizontal;
+  -webkit-background-clip: text;
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.login-block {
+  width: 1000px;
+  height: 600px;
+  background-color: #b5b5b54f;
+}

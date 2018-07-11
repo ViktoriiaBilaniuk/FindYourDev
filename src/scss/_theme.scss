@@ -1,9 +1,9 @@
 @import './_variables.scss';
 
 a {
-    color: $blue;
+    color: blue;
     &:hover {
-        color: darken($blue, 10%);
+        color: darken(blue, 10%);
     }
 }
 

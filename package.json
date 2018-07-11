@@ -22,11 +22,11 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@types/greensock": "^1.15.32",
     "core-js": "^2.5.4",
     "cors": "^2.8.4",
     "jquery": "^3.3.1",
     "ng4-social-login": "^1.4.2",
-    "ngx-fullpage": "^4.0.6",
     "rxjs": "^6.2.1",
     "rxjs-compat": "^6.2.1",
     "zone.js": "^0.8.26"

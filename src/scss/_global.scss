@@ -108,14 +108,11 @@ img {
   position: relative;
 }
 
-.number {
-  right: 30px;
-  font-size: 16px;
-  position: absolute;
-  color: $dark-blue;
-  line-height: 25px;
-}
-
 .readOnly {
   pointer-events: none;
 }
+
+.hoverable {
+  cursor: pointer;
+}
+
