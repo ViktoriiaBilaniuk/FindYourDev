@@ -19,10 +19,41 @@
   <div class="wrap-white">
     <div class="text-box">
       <p class="text">Please, login first</p>
-      <div class="login-block">
-
-
+      <div class="cards">
+        <div class="card card__first">
+          <div class="card__sign-in flex flex_justify-content-space-between">
+            <p class="card__text">Login with facebook</p>
+            <span
+              (click)="signInWithFB()"
+              class="card__button card__button_facebook hoverable scaleable">
+            </span>
+          </div>
+          <div *ngIf="user" class="card__user flex flex_justify-content-space-between">
+            <p class="card__text">You logged in as</p>
+            <div class="card__user">
+              <span class="card__user-photo card__button" [ngStyle]="{'backgroundImage': user.photoUrl}"></span>
+              <p class="card__user-name card__text">{{user.name}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card__second">
+          <div class="card__sign-in flex flex_justify-content-space-between">
+            <p class="card__text">Login with linkedIn</p>
+            <span
+              (click)="signInWithLinkedIN()"
+              class="card__button card__button_linkedin hoverable scaleable">
+            </span>
+          </div>
+          <div *ngIf="user" class="card__user flex flex_justify-content-space-between">
+            <p class="card__text">You logged in as</p>
+            <div class="card__user">
+              <span class="card__user-photo card__button" [ngStyle]="{'backgroundImage': 'url(' + user.photoUrl + ')'}"></span>
+              <p class="card__user-name card__text">{{user.name}}</p>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </div>

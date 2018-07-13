@@ -31,8 +31,63 @@
   line-height: 100px;
 }
 
-.login-block {
-  width: 1000px;
-  height: 600px;
+.cards {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
   background-color: #b5b5b54f;
+  position: absolute;
+  padding: 50px 100px;
+  &__first {
+    background-color: $purple-dark;
+  }
+
+  &__second {
+    left: 50px;
+    top: 50px;
+    background-color: $purple-light;
+  }
+  &__sign-in {
+    align-items: center;
+  }
+
+  &__text {
+    color: white;
+
+  }
+  &__button {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &_facebook {
+      background-image: url('../../../../assets/images/facebook.png');
+    }
+    &_linkedin {
+      background-image: url('../../../../assets/images/linkedin.png');
+    }
+
+  }
+
+  &__user {
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__user-photo {
+    border-radius: 50%;
+
+  }
+
+  &__user-name {
+
+  }
 }

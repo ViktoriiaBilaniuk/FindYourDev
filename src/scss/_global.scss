@@ -116,3 +116,10 @@ img {
   cursor: pointer;
 }
 
+.scaleable {
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.15);
+    transition:transform  0.3s;
+  }
+}
