@@ -1,4 +1,5 @@
-import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import * as TweenMax from 'gsap/TweenMax';
 
 @Component({
   selector: 'fyd-home',

@@ -22,7 +22,6 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
-    "@types/greensock": "^1.15.32",
     "core-js": "^2.5.4",
     "cors": "^2.8.4",
     "jquery": "^3.3.1",

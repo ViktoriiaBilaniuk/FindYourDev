@@ -11,6 +11,7 @@ export class TitleComponent implements OnInit, AfterViewInit {
   @ViewChild('changeText') changeTextElement;
   counter = 0;
   text = ['JAVA', 'JAVASCRIPT', 'C#', 'PHP', 'PYTHON', 'C++', 'RUBY', 'SWIFT', 'OBJECTIVE-C', 'SCALA', 'TYPESCRIPT', 'KOTLIN'];
+  circleButtonClick;
 
   constructor(private router: Router) { }
 
@@ -329,7 +330,8 @@ export class TitleComponent implements OnInit, AfterViewInit {
   }
 
   searchClick() {
-    this.router.navigate(['/auth']);
+    this.circleButtonClick = true;
+    // this.router.navigate(['/auth']);
   }
 
 }

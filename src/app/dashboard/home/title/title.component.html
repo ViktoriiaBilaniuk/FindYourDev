@@ -1,11 +1,27 @@
 <div class="particle-network-animation"></div>
 
-<div class="text-wrapp">
-  <h1>
-    Find your
-    <span #changeText class="gradient-words">TYPESCRIPT</span>
-    dev
-  </h1>
-</div>
-<div class="search hoverable" (click)="searchClick()"></div>
+<section>
+  <div class="text-wrapp">
+    <h1>
+      Find your
+      <span #changeText class="gradient-words">TYPESCRIPT</span>
+      dev
+    </h1>
+  </div>
+  <div class="transition-circle" [ngClass]="{'transition-circle__open': circleButtonClick}"></div>
+  <fyd-circle-button
+    class="search hoverable"
+    [click]="circleButtonClick"
+    (click)="searchClick()">
+  </fyd-circle-button>
+</section>
 
+<section class="steps" *ngIf="circleButtonClick">
+  <ul>
+    <li class="char1"> <span class="digit">01</span> <span class="text"> Login with Facebook </span> </li>
+    <li class="char2"> <span class="digit">02</span> <span class="text"> Login with LinkedIn </span> </li>
+    <li class="char3"> <span class="digit">03</span> <span class="text"> Enter search criteria </span> </li>
+    <li class="char4"> <span class="digit">04</span> <span class="text"> Get list of developpers </span> </li>
+    <li class="char5"> <span class="digit">05</span> <span class="text"> Choose your dev </span> </li>
+  </ul>
+</section>

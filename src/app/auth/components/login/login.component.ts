@@ -6,11 +6,13 @@ import {
   LinkedinLoginProvider,
   SocialUser,
 } from 'ng4-social-login';
+import {fadeInAnimation} from '../../../shared/components/animations/animations.component';
 
 @Component({
   selector: 'fyd-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  animations: [fadeInAnimation],
 })
 export class LoginComponent implements OnInit, OnDestroy {
 
